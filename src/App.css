@@ -1,38 +1,592 @@
-.App {
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+
+}
+html, body {
+  width: 100%;
+  height: 100%;
+
+}
+section {
+  width: 100%;
+  height: 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-image: url(./loan.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+nav { 
+  width: 100%;
+  height: 10%;
+  /* position: fixed; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+.image {
+  margin-left: 3vmax;
+  margin-top: 1vmax;
+  
+}
+a:hover{
+  color: rgb(243, 51, 17) !important;
+}
+.aa {
+  text-decoration: none;
+  color: brown;
+}
+.ll {
+  text-decoration: none;
+  color: brown;
+}
+.menu {
+  width: 28%;
+  height: 80%;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: brown;
+  margin-right: 10vmax;
+  margin-top: 30px;
+  text-decoration: none;
+
+}
+.menu p:hover {
+ background-color: rgba(238, 141, 141,.5);
+ color: #fff;
+}
+
+.menu p:hover :before {
+  width: 100%;
+  left: 0;
+  right: 50%;
+
+}
+.menu p:hover {
+  transition: 0.5s;
+} 
+.container { 
+  width: 100%;
+  height: 88%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+.fo {
+    margin-top: 5%;
+    
+} 
+.form-box {
+  border: 1px solid transparent;
+  width: 25vmax;
+  height: 28vmax;
+  background-color: rgba(238, 141, 141,.5);
+  border-radius: 3px;
+  margin-bottom: 5vmax;
+}
+.mb-3 {
+  /* border: 2px solid black; */
+  width: 20vmax; 
+  height: 3vmax;
+  margin-top: 30px;
+  line-height: 6vmax;
+  margin-left: 28px;
+  
+}
+.mb-3 > input {
+  width: 21vmax;
+  height: 2.5vmax;
+  border: none;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-top: 5%;
+}
+.form-box > p {
+  margin-left: 30px;
+  width: 22vmax;
+  font-size: 15px;
+  color: rgb(34, 29, 29);
+  margin-bottom: 30px;
+}
+.loo {
+  padding: 10px 30px;
+  font-size: 22px;
+  margin-left: 50px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(146, 20, 20);
+ 
+}
+.loo:hover {
+  background-color: rgba(107, 4, 4, 0.718) !important;
+
+}
+.heading {
+  width: 85%;
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+.heading > h1 {
+  width: 70%;
+  font-size: 45px;
+  color: rgba(241, 119, 12, 0.985);
+  margin-bottom: 10vmax;
+  margin-left: 30%;
+  margin-top: 62%;
+ 
+}
+header {
+  width: 100%;
+  height: 90%;
+  background-color: rgb(242, 230, 230);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+.page {
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.page > h1 {
+  color: brown;
+  font-size: 50px;
+  margin-top: 5%;
+  
+}
+.btn {
+  width: 100%;
+  height: 15%;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+
+}
+.btn > button {
+  padding: 5px 25px;
+  border-radius: 100vmax;
+  color: brown;
+  font-weight: bold;
+  font-size: 30px;
+  border-color: brown;
+  background-color: rgb(242, 230, 230);
+  margin-top: 5%;
+  /* border: 2px solid black; */
+ 
+}
+.btn1 {
+  margin-right: 19vmax;
+}
+.btn3 {
+  margin-left: 19vmax;
+}
+.page1 {
+  width: 98%;
+  height: 55%;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+} 
+.clas1 {
+  width: 23%;
+  height: 50%;
+  /* border: 2px solid black; */
+  
+}
+.clas1 > h1 {
+  font-size: 23px; 
+  color: brown;
+  text-align: center;
+  /* border: 2px solid black; */
+ 
+}
+.clas1 > p {
+  width: 90%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 20px; 
+  /* border: 2px solid black; */
+  margin-top: 2vmax;
+  margin-left: 18px;
+}
+.clas1:hover {
+  background-color: rgb(250, 231, 231);
+}
+.clas2 {
+  width: 22%;
+  height: 50%;
+  /* border: 2px solid black; */
+  margin: 60px;
+
+}
+.clas2 > h1 {
+  font-size: 23px; 
+  color: brown;
+  text-align: center;
+ 
+}
+.clas2 > p {
+  width: 100%;
+  text-align: center;
+  font-size: 18px; 
+  line-height: 20px;
+  margin-top: 2vmax; 
+  
+}
+.clas2:hover {
+  background-color: rgb(250, 231, 231);
+}
+.clas3 {
+  width: 20%;
+  height: 50%;
+  /* border: 2px solid black; */
+}
+.clas3 > h1 {
+  font-size: 23px; 
+  color: brown;
+  text-align: center;
+ 
+}
+.clas3 > p {
+  width: 100%;
+  text-align: center;
+  font-size: 18px; 
+  line-height: 20px; 
+  margin-top: 2vmax;
+  
+}
+.clas3:hover {
+  background-color: rgb(250, 231, 231);
+
+}
+main {
+  width: 100%;
+  height: 80%;
+  /* border: 2px solid black; */
+
+}
+.container2 {
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 80px;
+}
+.img {
+  margin-left: 8vmax;
+ 
+}
+.page2 {
+  width: 100%;
+  height: 75%;
+  /* border: 2px solid black; */
+  margin-left: 10vmax;
+
+}
+.page2 > h5 {
+  /* border: 2px solid black; */
+  font-size: 25px;
+  color: rgb(161, 28, 28);
+}
+.page2 > h1 {
+  /* border: 2px solid black; */
+  font-size: 35px;
+  color: rgb(161, 28, 28);
+  margin-top: 15px;
+
+}
+.page2 > p {
+  /* border: 2px solid black; */
+  font-size: 17px;
+  color: rgb(74, 53, 53);
+  margin-top: 30px;
+
+}
+.page2 > button {
+  /* border: 2px solid black; */
+  padding: 8px 70px;
+  border-radius: 8px;
+  background-color: brown;
+  color: #fff;
+  font-size: 25px;
+  margin-top: 30px;
+  border: none;
+}
+.page2 > button:hover {
+  background-color: rgb(200, 76, 76);
+
+}
+.container3 {
+  /* border: 2px solid black; */
+  width: 100%;
+  height: 56%;
+  background-color: rgb(159, 34, 34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 50px;
+}
+.page3 {
+  width: 50%;
+  height: 70%;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 10vmax;
+
+}
+.page3 > h1 {
+  height: 30%;
+  /* border: 2px solid black; */
+  color: #fff;
+  font-size: 48px;
+  /* margin-right: 10px; */
+  margin-top: 30px;
+  
+}
+.page3 > p {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #fff;
+}
+.container3 > button {
+  /* border: 2px solid black; */
+  padding: 10px 70px;
+  border-radius: 8px;
+  background-color: rgb(108, 141, 18);
+  color: #fff;
+  font-size: 22px;
+  margin-right: 12vmax;
+  border: none;
+  
+}
+.container4 {
+  /* border: 2px solid black; */
+  width: 100%;
+  height: 40%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 50px;
+}
+.page5 {
+  width: 100%;
+  height: 50%;
+ 
+
+}
+.page5 > h6 {
+  width: 100%;
+  height: 20%;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
+
+}
+.page5 > p {
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  margin-top: 15px;
+
+}
+.page5 > h5 {
+  height: 50px;
+  color: #fff;
+  background-color: rgb(74, 72, 72);
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: lighter;
+  line-height: 20px;
+  margin-top: 30px;
+ 
+}  
+
+/* Register CSS */
+.funds{
+  background-image: url(./Components/fund.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+}
+
+/* Rates CSS */
+.Rates {
+  background-image: url(./Components/rupay.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.Raa {
+  width: 60%;
+  height: 75%;
+  /* border: 2px solid #fff; */
+  margin-top: 20px;
+  margin-left: 19%;
+  color: #fff;
+
+}
+.Raa h1 {
+  font-size: 35px;
+
+}
+.rates1 > h1 {
+   color: #fff;
+   font-size: 32px;
+  
+}
+.rates1 p {
+  font-size: 19px;
+  color: rgb(174, 171, 171);
+  font-weight: bolder;
+
+}
+.rates2 h1 {
+   color: #fff;
+   font-size: 32px;
+}
+.rates2 p {
+  font-size: 19px;
+  color: rgb(174, 171, 171);
+  font-weight: bolder;
+}
+.rates3 {
+  color: #fff;
+  font-size: 32px;
+}
+.rates3 p {
+  font-size: 19px;
+  color: rgb(174, 171, 171);
+  font-weight: bolder;
+
+}
+.cross {
+  /* border: 2px solid black; */
+  padding: 8px 30px;
+  font-size: 20px;
+  margin-left: 85%;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgb(146, 20, 20);
+}
+.Contact {
+  background-image: url(./Components/loan.png);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.Contact1 {
+  width: 40%;
+  height: 88%;
+  border: 1px solid #fff;
+  margin-left: 28%;
+  border-radius: 5px;
+  background-color: #fff;
   text-align: center;
 }
+/* .Con {
+  border: 1px solid black;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+} */
+.Con1 h1 {
+  font-size: 25px;
+  margin-top: 10px;
+  
+}
+.Con1 h2 {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Con1 p {
+  font-size: 19px;
+  font-family: sans-serif;
+}
+.Con2 h1 {
+  font-size: 20px;
+  line-height: 30px;
+  
+}
+.co {
+  font-size: 20px;
+  font-weight: lighter;
+
+}
+.form-box1 {
+  /* border: 1px solid black; */
+  width: 38vmax;
+  height: 20vmax;
+  border-radius: 3px;
+  margin-bottom: 18vmax;
+  
+}
+.box > input {
+  width: 34vmax;
+  height: 2.5vmax;
+  margin-top: 4%;
+  font-size: 15px;
+  border-radius: 4px;
+  margin-left: 4%;
+  border: 1px solid black;
+}
+.box1 > textarea {
+  width: 34vmax;
+  margin-top: 4%;
+  margin-left: 4%;
+  font-size: 15px;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+.close {
+  padding: 8px 15px;
+  font-size: 18px;
+  margin-right: 40%;
+  border-radius: 5px;
+  color: rgb(250, 247, 247);
+  text-decoration: none;
+  background-color: rgb(146, 20, 20);
+}
+.lo {
+  padding: 8px 40px;
+  font-size: 20px;
+  margin-right: 65%;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgb(146, 20, 20);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
